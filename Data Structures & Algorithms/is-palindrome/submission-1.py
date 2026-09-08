@@ -1,0 +1,10 @@
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        s = s.lower()
+        s1 = ''
+        for i in s:
+            if i.isalpha() or i.isdigit():
+                s1 += i
+        return s1[::-1] == s1
+
+        
